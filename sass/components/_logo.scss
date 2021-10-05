@@ -1,0 +1,24 @@
+.logo {
+  margin-right: 93px;
+
+  color: $title-color;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &--header {
+    color: $accent-color;
+  }
+
+  &--footer {
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  &--foot {
+    color: $hero-color;
+  }
+}
