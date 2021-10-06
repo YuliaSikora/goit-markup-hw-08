@@ -1,7 +1,12 @@
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .page-header__nav {
@@ -10,7 +15,8 @@
   align-items: center;
 }
 .page-header__site-nav {
-  display: flex;
+  display: none;
+  // display: flex;
   margin: 0px;
 }
 .page-header__nav-link {
@@ -53,7 +59,8 @@
   margin-left: 50px;
 }
 .page-header__address {
-  display: flex;
+  display: none;
+  // display: flex;
   margin-left: auto;
 }
 .page-header__address-item + .page-header__address-item {

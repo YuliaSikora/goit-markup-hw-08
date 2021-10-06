@@ -1,7 +1,9 @@
 .footer {
   background-color: $background-hero;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .footer__address {
   font-weight: 400;
@@ -11,6 +13,9 @@
   letter-spacing: 0.03em;
 
   color: $hero-color;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .footer__link {
   font-family: $main-font;
@@ -46,6 +51,10 @@
   margin-bottom: 20px;
 
   color: $hero-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer__item {
@@ -62,9 +71,13 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer__socials {
-  margin-left: 70px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
 }

@@ -1,33 +1,48 @@
-@media screen and (min-width: $desktop) {
-  .hero {
+.hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
+  background-color: $background-hero;
+  text-align: center;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero.jpg);
     max-width: 1600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: 0 auto;
-    background-color: $background-hero;
-    text-align: center;
   }
 }
-@media screen and (min-width: $desktop) {
-  .hero__head {
-    font-weight: 900;
+.hero__head {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  max-width: 360px;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+  color: $hero-color;
+
+  @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+
     max-width: 696px;
-    letter-spacing: 0.06em;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
-
-    margin-bottom: 30px;
-
-    color: $hero-color;
   }
 }
 
