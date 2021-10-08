@@ -1,8 +1,12 @@
 .page-header {
-  height: 60px;
+  position: relative;
+  height: 80px;
   padding-top: 16px;
   padding-bottom: 16px;
-  @media screen and (min-width: $desktop) {
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,9 +19,15 @@
   align-items: center;
 }
 .page-header__site-nav {
-  display: none;
-  // display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: flex;
   margin: 0px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 88px;
+  }
 }
 .page-header__nav-link {
   padding-top: 32px;
@@ -59,13 +69,20 @@
   margin-left: 50px;
 }
 .page-header__address {
-  display: none;
-  // display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+  }
 }
-.page-header__address-item + .page-header__address-item {
-  margin-left: 50px;
+@media screen and (min-width: $desktop) {
+  .page-header__address-item + .page-header__address-item {
+    margin-left: 50px;
+  }
 }
+
 .page-header__address-link {
   display: flex;
   align-items: center;
@@ -84,6 +101,10 @@
   &:focus {
     color: $accent-color;
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 10px;
   }
 }
 .page-header__icon {

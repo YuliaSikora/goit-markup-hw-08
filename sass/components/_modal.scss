@@ -21,8 +21,13 @@
   transform: translate(-50%, 50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 
   background: $hero-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -61,7 +66,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-color;
+
+  @media screen and (max-width: 1199px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
+
 .modal__form {
   margin-left: 40px;
   margin-right: 40px;
@@ -104,6 +115,7 @@
   &:focus ~ .form-icon {
     fill: $accent-color;
   }
+
   &:focus {
     outline: none;
     border: 1px solid $accent-color;
@@ -124,6 +136,10 @@
 }
 
 .modal__button {
+  @media screen and (max-width: 1199px) {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
   margin: 0;
   margin-left: 124px;
   margin-right: 124px;
@@ -187,6 +203,13 @@
   background-size: contain;
 }
 .modal__checkbox-title {
-  display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }

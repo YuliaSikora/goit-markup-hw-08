@@ -38,8 +38,16 @@
 
 .btn-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 .btn-filter__position {
   margin-left: 8px;
