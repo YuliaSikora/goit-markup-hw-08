@@ -22,59 +22,16 @@
         <nav class="page-header__nav">
           <a href="./index.html" class="logo"> <span class="logo--header">Web</span>Studio </a>
 
-          <div class="menu-container is-open js-menu-container" id="mobile-menu">
-            <button
-              type="button"
-              class="burger-menu js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                <use class="burger-menu__open" href="./images/sprite.svg#menu_burg"></use>
-              </svg>
-            </button>
-
-            <ul class="mobile-menu">
-              <li class="mobile-menu__item">
-                <a href="./index.html" class="mobile-menu__item-link--current">Студия</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="./portfolio.html" class="mobile-menu__item--link">Портфолио</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__item--link" href="">Контакты</a>
-              </li>
-            </ul>
-            <ul class="burger-address">
-              <li class="burger-address__item">
-                <a class="burger-address__item--tel" href="tel:+380991111111">+38 099 111 11 11</a>
-              </li>
-              <li class="burger-address__item">
-                <a class="burger-address__item--link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-            </ul>
-            <ul class="burger-link">
-              <li class="burger-link__item">
-                <a class="burger-link__item--socials" href="https://www.instagram.com">Instagram</a>
-              </li>
-              <li class="burger-link__item">
-                <a class="burger-link__item--socials" href="https://www.twitter.com">Twitter</a>
-              </li>
-              <li class="burger-link__item">
-                <a class="burger-link__item--socials" href="https://www.facebook.com">Facebook</a>
-              </li>
-              <li class="burger-link__item">
-                <a class="burger-link__item--socials" href="https://www/linkedin.com">LinkedIn</a>
-              </li>
-            </ul>
-            <button class="burger-menu js-close-menu">
-              <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                <use class="burger-menu__close" href="./images/sprite.svg#close_burg"></use>
-              </svg>
-            </button>
-          </div>
+          <button
+            type="button"
+            class="burger-menu menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="переключатель мобильного меню">
+              <use class="burger-menu__open" href="./images/sprite.svg#menu_burg"></use>
+            </svg>
+          </button>
 
           <ul class="page-header__site-nav">
             <li class="page-header__nav-item">
@@ -622,6 +579,47 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="burger-menu js-close-menu">
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="burger-menu__close" href="./images/sprite.svg#close_burg"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__item-link--current">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__item--link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__item--link" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="burger-address">
+        <li class="burger-address__item">
+          <a class="burger-address__item--tel" href="tel:+380991111111">+38 099 111 11 11</a>
+        </li>
+        <li class="burger-address__item">
+          <a class="burger-address__item--link" href="mailto:info@example.com">info@example.com</a>
+        </li>
+      </ul>
+      <ul class="burger-link">
+        <li class="burger-link__item">
+          <a class="burger-link__item--socials" href="https://www.instagram.com">Instagram</a>
+        </li>
+        <li class="burger-link__item">
+          <a class="burger-link__item--socials" href="https://www.twitter.com">Twitter</a>
+        </li>
+        <li class="burger-link__item">
+          <a class="burger-link__item--socials" href="https://www.facebook.com">Facebook</a>
+        </li>
+        <li class="burger-link__item">
+          <a class="burger-link__item--socials" href="https://www/linkedin.com">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <script
       defer
