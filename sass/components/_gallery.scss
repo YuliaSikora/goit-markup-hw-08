@@ -76,6 +76,11 @@
   border-left: 1px solid $border-gallery;
   border-bottom: 1px solid $border-gallery;
 }
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .gallery__text--web {
+    padding-bottom: 56px;
+  }
+}
 .gallery__cover-text {
   text-align: left;
   font-size: 18px;

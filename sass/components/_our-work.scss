@@ -40,10 +40,11 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
     justify-content: center;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
@@ -54,5 +55,16 @@
 
   &:first-child {
     margin-left: 0px;
+  }
+  @media screen and (min-width: 320px) {
+    margin: 0;
+  }
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    &:nth-last-child(-n + 2) {
+      margin-top: 15px;
+    }
+    &:last-child {
+      margin-top: 15px;
+    }
   }
 }

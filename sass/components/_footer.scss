@@ -1,9 +1,7 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $background-hero;
-  @media screen and (min-width: $desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 .footer__address {
   font-weight: 400;
@@ -75,9 +73,6 @@
 }
 
 .footer__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
