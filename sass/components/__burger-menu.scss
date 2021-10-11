@@ -71,6 +71,14 @@
   margin-bottom: 36px;
   &:last-child {
     margin-bottom: 302px;
+    @media screen and (max-width: 479px) {
+      &:last-child {
+        margin-bottom: 150px;
+      }
+    }
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 25px;
   }
 }
 .mobile-menu__item--link {
@@ -90,6 +98,9 @@
   letter-spacing: 0.02em;
 
   color: $accent-color;
+  @media screen and (max-width: 479px) {
+    font-size: 25px;
+  }
 }
 
 .burger-address__item--link {
@@ -133,4 +144,7 @@
   letter-spacing: 0.02em;
 
   color: $accent-color;
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+  }
 }

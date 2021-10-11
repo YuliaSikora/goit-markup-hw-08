@@ -49,7 +49,7 @@
 }
 @media screen and (min-width: $desktop) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -57,7 +57,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/1200/hero1200.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -81,7 +81,9 @@
   text-transform: uppercase;
 
   color: $hero-color;
-
+  @media screen and (max-width: 479px) {
+    font-size: 16px;
+  }
   @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;

@@ -153,6 +153,18 @@ a {
   margin-bottom: 302px;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__item:last-child:last-child {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-menu__item {
+    font-size: 25px;
+  }
+}
+
 .mobile-menu__item--link {
   color: #212121;
   text-decoration: none;
@@ -169,6 +181,12 @@ a {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .burger-address__item--tel {
+    font-size: 25px;
+  }
 }
 
 .burger-address__item--link {
@@ -216,6 +234,12 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .burger-link__item--socials {
+    font-size: 15px;
+  }
 }
 
 .visually-hidden {
